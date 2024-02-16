@@ -1,0 +1,9 @@
+<div class="search-div" [ngClass]="{changeBackground: searchValue != ''}">
+<!-- Using ngClass we can add a CSS class dynamically to a web page element-->
+  <span><b>Search:</b></span>
+  <!-- <input type="text" (input)="changeSearchValue($event)" /> --> <!-- //One way Data binding -->
+  <input type="text" [(ngModel)]="searchValue"> <!-- //Two way Data binding -->
+  <span *ngIf="searchValue != ''">You searched for "{{ searchValue }}"</span>
+  <!-- Using ngIf we can add or remove element from a webpage base on a condition -->
+</div>
+<!-- To use two way model I need to import FormsModule in app.models file -->

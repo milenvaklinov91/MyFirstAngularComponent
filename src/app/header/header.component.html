@@ -1,0 +1,10 @@
+<div class="header">
+  <div class="site-image">
+    <img [src]="source" height="240" width="320" /> <!-- Here I use Property Binding (Instead of  <img src="/assets/shopping.jpg" height="240" width="320") -->
+  </div>
+  <div class="site-slogan">
+    <!-- <h2>Your one stop shop for everything.</h2> This is static content(static html) and I don't need framework like Angular  -->
+    <h2>{{ slogan }}</h2> <!-- This is String Interpolation ... Now this slogan is rendered dynamically (this is what Data binding is)-->
+  </div>
+</div>
+
